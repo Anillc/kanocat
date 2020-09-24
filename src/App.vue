@@ -14,11 +14,17 @@
           </v-list-item-icon>
           <v-list-item-content>鹿乃的音乐w</v-list-item-content>
         </v-list-item>
+        <v-list-item link to="/guitar">
+          <v-list-item-icon>
+            <v-icon>mdi-music</v-icon>
+          </v-list-item-icon>
+          <v-list-item-content>Guitar!</v-list-item-content>
+        </v-list-item>
         <v-list-item link to="/bang">
           <v-list-item-icon>
             <v-icon>mdi-music</v-icon>
           </v-list-item-icon>
-          <v-list-item-content>bang!</v-list-item-content>
+          <v-list-item-content>Bang!</v-list-item-content>
         </v-list-item>
         <v-list-item link to="/about">
           <v-list-item-icon>

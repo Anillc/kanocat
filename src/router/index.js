@@ -18,7 +18,10 @@ const routes = [
   }, {
     path: '/about',
     component: () => import('@/views/About.vue')
-  }
+  }, {
+    path: '/guitar',
+    component: () => import('@/views/Guitar.vue')
+  } 
 ]
 
 const router = new VueRouter({

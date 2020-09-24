@@ -1,5 +1,5 @@
 <template>
-  <v-container ref="gameContainer" class="fill-height">
+  <v-container class="fill-height">
     <v-row align="baseline" justify="center" class="fill-height">
       <v-col>
         <v-card>
