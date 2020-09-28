@@ -47,7 +47,7 @@
       :elevate-on-scroll="appTheme.elevate"
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title>kano的cat~</v-toolbar-title>
+      <v-toolbar-title>kanocat~</v-toolbar-title>
       <v-spacer />
       <v-menu open-on-hover offset-y>
         <template v-slot:activator="{ on, attrs }">

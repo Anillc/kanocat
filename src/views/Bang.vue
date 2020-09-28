@@ -26,7 +26,7 @@
           <v-card-title>排行榜</v-card-title>
           <v-card-subtitle>
             这里记录在这儿打过的人的分数w
-            <br />请自觉打游戏哦，不要用特殊手段来提升排名，这儿全靠自觉umm
+            <br />请自觉打游戏哦，不要用特殊手段来提升排名ww
           </v-card-subtitle>
           <v-card-text>这个功能还没实现XD</v-card-text>
         </v-card>

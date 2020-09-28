@@ -21,6 +21,9 @@ const routes = [
   }, {
     path: '/guitar',
     component: () => import('@/views/Guitar.vue')
+  }, {
+    path: '/chat',
+    component: () => import('@/views/Chat.vue')
   } 
 ]
 

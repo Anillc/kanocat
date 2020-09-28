@@ -1,0 +1,4 @@
+{
+    "appKeys": ["www"],
+    "mongodb": "mongodb://localhost:27017/kanocat"
+}

@@ -35,6 +35,10 @@ module.exports =
       player:
         enablePlayer: true
         soundFont: '/js/font/sonivox.sf2'
+    window.api = this.api
+  beforeDestroy: ->
+    # this.api?.stop()
+    this.api?.destroy()
   methods:
     play: ->
       this.api.play()
