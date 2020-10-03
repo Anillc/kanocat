@@ -7,7 +7,7 @@
               聊天室，未完成
           </v-card-title>
           <v-card-text>
-              <div class="term" ref="term"></div>
+              <div ref="term"></div>
           </v-card-text>
         </v-card>
       </v-col>
@@ -17,6 +17,7 @@
 
 <script lang="coffee">
 { Terminal } = require 'xterm'
+{ FitAddon } = require 'xterm-addon-fit'
 io = require 'socket.io-client'
 
 module.exports =
@@ -27,25 +28,30 @@ module.exports =
     input: ''
   mounted: ->
     this.term = new Terminal()
+    fit = new FitAddon()
+    this.term.loadAddon fit
     this.term.open this.$refs.term
+    fit.fit()
     this.term.onKey this.onInput
     this.socket = io 'https://api.kano.cat:2226'
     this.socket.on 'msg', (msg) =>
       this.term.write msg.text
+      this.term.write '\x1b\x45> '
     this.socket.on 'notice', (notice) =>
       this.term.write notice
   methods:
     onInput: (i) ->
-      if i.keyCode == 13
-        this.socket.write this.input
-        this.input = ''
+      if i.domEvent.keyCode != 13
+        this.input += i.key
+        this.term.write i.key
         return
-      this.input += i.key
-      this.term.write i.key
+      if this.input == '/login'
+        window.location = 'https://api.kano.cat:2226/connect/github'
+        return
+      this.socket.emit 'msg', this.input
+      this.input = ''
+      this.term.write '\x1b\x45'
 </script>
 
 <style lang="less" scoped>
-.term {
-    overflow: hidden;
-}
 </style>
