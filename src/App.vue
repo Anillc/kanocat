@@ -26,12 +26,19 @@
           </v-list-item-icon>
           <v-list-item-content>Bang!</v-list-item-content>
         </v-list-item>
+        <v-list-item link to="/chorus">
+          <v-list-item-icon>
+            <v-icon>audiotrack</v-icon>
+          </v-list-item-icon>
+          <v-list-item-content>生日合唱</v-list-item-content>
+        </v-list-item>
         <v-list-item link to="/about">
           <v-list-item-icon>
             <v-icon>mdi-information</v-icon>
           </v-list-item-icon>
           <v-list-item-content>关于</v-list-item-content>
         </v-list-item>
+
         <v-divider></v-divider>
         <v-subheader>友情链接w</v-subheader>
         <v-list-item link href="https://anillc.cn" target="_blank">
@@ -48,7 +55,7 @@
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title>kanocat~</v-toolbar-title>
-      <v-spacer />
+      <v-spacer></v-spacer>
       <v-menu open-on-hover offset-y>
         <template v-slot:activator="{ on, attrs }">
           <v-btn v-bind="attrs" v-on="on" icon>
@@ -72,7 +79,7 @@
 </template>
 
 <script lang="coffee">
-module.exports =
+export default
   name: 'App'
   data: ->
     drawer: false

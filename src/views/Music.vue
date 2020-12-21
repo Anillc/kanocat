@@ -11,7 +11,7 @@
         </v-card>
         <v-card>
           <v-card-text>
-            <iframe src="https://awsl.ee" frameborder="0" class="ifr"></iframe>
+            <iframe src="https://music.kanodayo.tk" frameborder="0" class="ifr"></iframe>
           </v-card-text>
         </v-card>
       </v-col>
@@ -20,7 +20,7 @@
 </template>
 
 <script lang="coffee">
-module.exports =
+export default
   name: 'Music'
   mounted: ->
 </script>

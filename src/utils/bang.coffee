@@ -1,5 +1,4 @@
-best2bbb = require './bestdori2bbb'
-  .default
+import best2bbb from './bestdori2bbb'
 
 getMap = (level)->
   map = await (await fetch "/128.#{level}.json").json()

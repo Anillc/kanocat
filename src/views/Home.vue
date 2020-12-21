@@ -20,9 +20,9 @@
 </template>
 
 <script lang="coffee">
-superagent = require 'superagent'
+import superagent from 'superagent'
 
-module.exports =
+export default
   name: 'Home'
   data: ->
     lrc: ''

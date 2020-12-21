@@ -22,7 +22,7 @@
 </template>
 
 <script lang="coffee">
-module.exports =
+export default
   name: 'About'
 </script>
 

@@ -36,10 +36,10 @@
 </template>
 
 <script lang="coffee">
-bang = require 'bangbangboom-game'
-bangUtils = require '../utils/bang.coffee'
+import bang from 'bangbangboom-game'
+import bangUtils from '../utils/bang.coffee'
 
-module.exports =
+export default
   name: 'Bang'
   data: ->
     started: false

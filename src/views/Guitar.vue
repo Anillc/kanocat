@@ -25,7 +25,7 @@
 </template>
 
 <script lang="coffee">
-module.exports =
+export default
   name: 'Guitar'
   data: ->
     api: null

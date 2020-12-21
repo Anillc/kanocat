@@ -2,38 +2,25 @@
   "name": "kanocat",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'"
-  },
+  "scripts": {},
   "dependencies": {
+    "@babel/preset-env": "^7.12.11",
+    "@babel/runtime": "^7.12.5",
     "bangbangboom-game": "https://github.com/K024/bangbangboom-game.git#7ea2be3",
-    "core-js": "^3.6.5",
-    "socket.io-client": "^2.3.0",
     "superagent": "^6.1.0",
-    "three": "^0.118.3",
     "vue": "^2.6.11",
+    "vue-hot-reload-api": "^2.3.4",
     "vue-i18n": "^8.18.2",
     "vue-router": "^3.2.0",
-    "vuetify": "^2.2.11",
-    "vuex": "^3.4.0",
-    "xterm": "^4.9.0",
-    "xterm-addon-fit": "^0.4.0"
+    "vuetify": "^2.2.11"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.4.0",
-    "@vue/cli-plugin-router": "~4.4.0",
-    "@vue/cli-plugin-vuex": "~4.4.0",
-    "@vue/cli-service": "~4.4.0",
-    "coffee-loader": "^1.0.0",
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@vue/component-compiler-utils": "^3.2.0",
     "coffeescript": "^2.5.1",
-    "less-loader": "^6.2.0",
-    "sass": "^1.19.0",
-    "sass-loader": "^8.0.0",
-    "vue-cli-plugin-i18n": "~1.0.1",
-    "vue-cli-plugin-vuetify": "~2.0.6",
-    "vue-template-compiler": "^2.6.11",
-    "vuetify-loader": "^1.3.0"
+    "less": "^4.0.0",
+    "parcel": "^1.12.4",
+    "vue-template-compiler": "^2.6.12"
   }
 }
