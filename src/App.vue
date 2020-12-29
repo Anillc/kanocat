@@ -26,12 +26,6 @@
           </v-list-item-icon>
           <v-list-item-content>Bang!</v-list-item-content>
         </v-list-item>
-        <v-list-item link to="/chorus">
-          <v-list-item-icon>
-            <v-icon>audiotrack</v-icon>
-          </v-list-item-icon>
-          <v-list-item-content>生日合唱</v-list-item-content>
-        </v-list-item>
         <v-list-item link to="/about">
           <v-list-item-icon>
             <v-icon>mdi-information</v-icon>

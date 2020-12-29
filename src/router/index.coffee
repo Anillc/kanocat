@@ -21,10 +21,7 @@ routes = [
   }, {
     path: '/guitar'
     component: -> import('../views/Guitar.vue')
-  }, {
-    path: '/chorus'
-    component: -> import('../views/Chorus.vue')
-  } 
+  }
 ]
 
 export default new VueRouter {

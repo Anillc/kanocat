@@ -2,12 +2,18 @@
   "name": "kanocat",
   "version": "0.1.0",
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "build": "shx rm -rf public && parcel build src/index.html -d public/ && shx cp -rf resource/* public/",
+    "clean": "shx rm -rf public .cache"
+  },
   "dependencies": {
     "@babel/preset-env": "^7.12.11",
     "@babel/runtime": "^7.12.5",
     "bangbangboom-game": "https://github.com/K024/bangbangboom-game.git#7ea2be3",
+    "lodash": "^4.17.20",
+    "lrc.js": "^1.0.2",
     "superagent": "^6.1.0",
+    "util": "^0.12.3",
     "vue": "^2.6.11",
     "vue-hot-reload-api": "^2.3.4",
     "vue-i18n": "^8.18.2",
@@ -21,6 +27,7 @@
     "coffeescript": "^2.5.1",
     "less": "^4.0.0",
     "parcel": "^1.12.4",
+    "shx": "^0.3.3",
     "vue-template-compiler": "^2.6.12"
   }
 }
