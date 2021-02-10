@@ -7,8 +7,8 @@
           <v-card-subtitle>来打六兆年吧XD</v-card-subtitle>
           <v-card-text>
             <v-form v-model="vaild">
-              <v-select :items="levels" label="难度" :rules="[v => !!v || '请选择难度']" v-model="level" />
-              <v-text-field label="速度" :rules="speedRules" v-model="speed" />
+              <v-select :items="levels" label="难度" :rules="[v => !!v || '请选择难度']" v-model="level"></v-form>
+              <v-text-field label="速度" :rules="speedRules" v-model="speed"></v-text-field>
               <v-btn @click="start" color="secondary" :disabled="started || !vaild">开始游戏</v-btn>
             </v-form>
             <v-snackbar v-model="started">加载中w</v-snackbar>

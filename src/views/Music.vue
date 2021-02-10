@@ -11,7 +11,7 @@
         </v-card>
         <v-card>
           <v-card-text>
-            <iframe src="https://music.kanodayo.tk" frameborder="0" class="ifr"></iframe>
+            <iframe src="https://music.ans.ee" frameborder="0" class="ifr"></iframe>
           </v-card-text>
         </v-card>
       </v-col>
