@@ -5,13 +5,13 @@
         <v-card class="mb-8">
           <v-card-title>关于本页</v-card-title>
           <v-card-text>
-            本页面由<a href="https://blog.lotywe.cc">lotywe</a>提供w
+            本页面由<a href="https://auqhjjqdo.xyz">auqhjjqdo</a>提供w
             <br/>使用OneManager提供OneDrive的直链下载
           </v-card-text>
         </v-card>
         <v-card>
           <v-card-text>
-            <iframe src="https://music.ans.ee" frameborder="0" class="ifr"></iframe>
+            <iframe src="https://kanosuki.com:1224" frameborder="0" class="ifr"></iframe>
           </v-card-text>
         </v-card>
       </v-col>
