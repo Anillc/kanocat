@@ -10,7 +10,7 @@
     "@babel/preset-env": "^7.12.11",
     "@babel/runtime": "^7.12.5",
     "bangbangboom-game": "https://github.com/K024/bangbangboom-game.git#7ea2be3",
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.21",
     "lrc.js": "^1.0.2",
     "superagent": "^6.1.0",
     "util": "^0.12.3",
